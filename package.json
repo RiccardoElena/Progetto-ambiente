@@ -1,0 +1,35 @@
+{
+  "name": "progetto-ambiente",
+  "version": "1.0.0",
+  "description": "Progetto ambiente per il liceo \"V. Cuoco\" di Napoli.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiccardoElena/Progetto-ambiente.git"
+  },
+  "keywords": [
+    "html",
+    "pug",
+    "sass",
+    "css",
+    "js",
+    "gulp"
+  ],
+  "author": "Riccardo Elena",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RiccardoElena/Progetto-ambiente/issues"
+  },
+  "homepage": "https://github.com/RiccardoElena/Progetto-ambiente#readme",
+  "devDependencies": {
+    "@luca.pipolo/gulp-static-starterkit": "^1.1.1",
+    "eslint-config-google": "^0.14.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

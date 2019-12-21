@@ -1,0 +1,33 @@
+*~
+.DS_Store
+# Patch/diff artifacts.
+*.patch
+*.diff
+*.orig
+*.rej
+interdiff*.txt
+debug.log
+*.log
+.vscode
+
+# emacs artifacts.
+*~
+\#*\#
+
+# Hidden files.
+.DS*
+.project
+.idea
+
+# Windows links.
+*.url
+*.lnk
+
+# dependencies.
+node_modules
+
+# Temporary files.
+.tmp
+
+# Dist.
+dist

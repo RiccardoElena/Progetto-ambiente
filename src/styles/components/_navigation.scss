@@ -1,0 +1,14 @@
+/**
+ * Navigation
+ */
+
+.site-navigation ul {
+  display: flex;
+  list-style-type: none;
+
+  li a {
+    padding: 0 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+}

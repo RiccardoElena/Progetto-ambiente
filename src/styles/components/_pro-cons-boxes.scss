@@ -1,0 +1,22 @@
+/**
+ * Pro & Cons boxes.
+ */
+
+.pro-cons-boxes {
+  display: flex;
+}
+
+.box {
+  width: calc(50% - 28px);
+  padding: 28px 48px;
+  background-color: #f3f3f3;
+
+  &:first-of-type {
+    margin-right: 48px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+}
