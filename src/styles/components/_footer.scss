@@ -1,0 +1,22 @@
+/**
+ * Footer.
+ */
+
+.site-footer {
+  margin-top: 48px;
+  padding: 8px 0;
+  background-color: $color-primary;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.site-footer__copyright {
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}

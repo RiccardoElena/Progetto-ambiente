@@ -1,10 +1,11 @@
+include mixins/_mixin.article.pug
 doctype html
 html
   include base/_head.pug
   body
     include base/_header.pug
-    img.hero(src="imgs/hero.jpg")
     main
+      img.hero(src="imgs/hero.jpg")
       .container.container--small
         h1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         p
@@ -56,3 +57,20 @@ html
       .container
         video.video(width="auto", controls)
           source(src="videos/test_video.mp4", type="video/mp4")
+      .container.gallery
+        img.gallery__item(src="https://via.placeholder.com/322")
+        img.gallery__item(src="https://via.placeholder.com/322")
+        img.gallery__item(src="https://via.placeholder.com/322")
+        img.gallery__item(src="https://via.placeholder.com/322")
+        img.gallery__item(src="https://via.placeholder.com/322")
+        img.gallery__item(src="https://via.placeholder.com/322")
+      .container
+        h2 I nostri articoli
+        .related-articles
+          +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet")
+          +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in")
+          +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet")
+                    +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet")
+          +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in")
+          +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet")
+    include base/_footer.pug
