@@ -1,5 +1,5 @@
-mixin article(title, excerpt)
+mixin article(title, excerpt, href)
   article.article
     h3.article__title #{title}
     p.article__content #{excerpt}&hellip;
-    a.btn.article__read-more(href="") Leggi
+    a.btn.article__read-more(href=href) Leggi

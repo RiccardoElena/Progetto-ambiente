@@ -1,0 +1,6 @@
+mixin list(title, excerpt,img, link)
+    li.list
+      h2.list__item-tile #{title}
+      p.list__item-body #{excerpt}
+      img.list__img(src=img)
+      a.btn.list__read-more(href=link) Vai al progetto
