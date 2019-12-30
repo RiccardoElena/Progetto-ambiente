@@ -4,72 +4,72 @@ html
   include base/_head.pug
   body
     include base/_header.pug
-    main
-      img.hero(src="imgs/hero.jpg")
-      .container.container--small
-        h1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    img.hero(src="imgs/hero.jpg")
+    .container.container--small
+      h1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        | tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim
+        | sed faucibus. Metus vulputate eu scelerisque felis imperdiet. Mauris nunc
+        | congue nisi vitae suscipit tellus mauris a diam. Egestas integer eget
+        | aliquet nibh praesent tristique. Fringilla urna porttitor rhoncus dolor purus.
+        | Habitasse platea dictumst quisque sagittis purus sit amet.
+        | Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices
+        | gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet
+        | risus feugiat in. Non tellus orci ac auctor augue. Potenti nullam ac tortor
+        | vitae purus faucibus ornare.
+    .container.pro-cons-boxes
+      .box
+        h2 Pros
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          | tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim
-          | sed faucibus. Metus vulputate eu scelerisque felis imperdiet. Mauris nunc
-          | congue nisi vitae suscipit tellus mauris a diam. Egestas integer eget
-          | aliquet nibh praesent tristique. Fringilla urna porttitor rhoncus dolor purus.
-          | Habitasse platea dictumst quisque sagittis purus sit amet.
-          | Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices
-          | gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet
-          | risus feugiat in. Non tellus orci ac auctor augue. Potenti nullam ac tortor
-          | vitae purus faucibus ornare.
-      .container.pro-cons-boxes
-        .box
-          h2 Pros
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            | tempor incididunt ut labore et dolore magna aliqua.
-          ul
-            li Item 1
-            li Item 2
-            li Item 3
-            li Item 4
-            li Item 5
-        .box
-          h2 Cons
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            | tempor incididunt ut labore et dolore magna aliqua.
-          ul
-            li Item 1
-            li Item 2
-            li Item 3
-            li Item 4
-            li Item 5
-      .container.container--small
+          | tempor incididunt ut labore et dolore magna aliqua.
+        ul
+          li Item 1
+          li Item 2
+          li Item 3
+          li Item 4
+          li Item 5
+      .box
+        h2 Cons
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          | tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim
-          | sed faucibus. Metus vulputate eu scelerisque felis imperdiet. Mauris nunc
-          | congue nisi vitae suscipit tellus mauris a diam. Egestas integer eget
-          | aliquet nibh praesent tristique. Fringilla urna porttitor rhoncus dolor purus.
-          | Habitasse platea dictumst quisque sagittis purus sit amet.
-          | Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices
-          | gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet
-          | risus feugiat in. Non tellus orci ac auctor augue. Potenti nullam ac tortor
-          | vitae purus faucibus ornare.
-      .container.container__video
-        iframe.video(src="https://www.youtube.com/embed/fWInyaMWBY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      .container.gallery
-        img.gallery__item(src="https://via.placeholder.com/322")
-        img.gallery__item(src="https://via.placeholder.com/322")
-        img.gallery__item(src="https://via.placeholder.com/322")
-        img.gallery__item(src="https://via.placeholder.com/322")
-        img.gallery__item(src="https://via.placeholder.com/322")
-        img.gallery__item(src="https://via.placeholder.com/322")
-      .container
+          | tempor incididunt ut labore et dolore magna aliqua.
+        ul
+          li Item 1
+          li Item 2
+          li Item 3
+          li Item 4
+          li Item 5
+    .container.container--small
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        | tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim
+        | sed faucibus. Metus vulputate eu scelerisque felis imperdiet. Mauris nunc
+        | congue nisi vitae suscipit tellus mauris a diam. Egestas integer eget
+        | aliquet nibh praesent tristique. Fringilla urna porttitor rhoncus dolor purus.
+        | Habitasse platea dictumst quisque sagittis purus sit amet.
+        | Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices
+        | gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet
+        | risus feugiat in. Non tellus orci ac auctor augue. Potenti nullam ac tortor
+        | vitae purus faucibus ornare.
+    .container.container__video
+      iframe.video(src="https://www.youtube.com/embed/fWInyaMWBY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    .container.gallery
+      img.gallery__item(src="https://via.placeholder.com/322")
+      img.gallery__item(src="https://via.placeholder.com/322")
+      img.gallery__item(src="https://via.placeholder.com/322")
+      img.gallery__item(src="https://via.placeholder.com/322")
+      img.gallery__item(src="https://via.placeholder.com/322")
+      img.gallery__item(src="https://via.placeholder.com/322")
+    .container
+      .articles
         h2 I nostri articoli
-        .related-articles
-          +article("Greta Thumberg, eroina o burattino?", "Greta Thunberg, giovane studentessa svedese nata nel 2003 che stasensibilizzando all'azione un'intera generazione, è l'ideatrice dei Fridays For Future e ", "./article1.html")
-          +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in", "/credits.html")
-          +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
-          +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
-          +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in", "/credits.html")
-          +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
+      .related-articles
+        +article("Greta Thumberg, eroina o burattino?", "Greta Thunberg, giovane studentessa svedese nata nel 2003 che stasensibilizzando all'azione un'intera generazione, è l'ideatrice dei Fridays For Future e ", "./article1.html")
+        +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in", "/credits.html")
+        +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
+        +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
+        +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in", "/credits.html")
+        +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
     include base/_footer.pug

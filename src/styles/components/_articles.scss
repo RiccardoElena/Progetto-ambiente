@@ -1,3 +1,8 @@
+
+.articles {
+  margin-left: 65px;
+}
+
 .related-articles {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +16,10 @@
   border: 1px solid $color-primary;
   border-radius: 10px;
   margin-bottom: 28px;
+
+  &:nth-of-type(3n+1){
+    margin-left: 65px;
+  }
 
   &:nth-of-type(3n+2) {
     margin-right: 28px;
