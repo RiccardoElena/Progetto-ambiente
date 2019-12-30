@@ -1,8 +1,13 @@
 /**
  * Video.
  */
+.container__video {
+  width: 1024px;
+  height: 580px;
+}
 
 .video {
-  max-width: 100%;
+  width: 100%;
+  height: 576px;
   border-radius: 10px;
 }

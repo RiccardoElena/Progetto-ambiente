@@ -1,0 +1,24 @@
+.related-articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: calc(33% - 76px);
+  padding: 10px ;
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+  margin-bottom: 28px;
+
+  &:nth-of-type(3n+2) {
+    margin-right: 28px;
+    margin-left: 28px;
+  }
+}
+
+.article__read-more {
+  width: max-content;
+  margin-top: auto;
+}

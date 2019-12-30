@@ -1,0 +1,22 @@
+
+p a {
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.conteiner__text {
+  p {
+    margin: 9px 0;
+  }
+}
+
+.text__second {
+  display: flex;
+  img {
+    width: calc(33% - 18px);
+    height: calc(100% - 18px);
+    margin: 9px;
+  }
+}
