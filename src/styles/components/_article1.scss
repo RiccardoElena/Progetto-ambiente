@@ -7,10 +7,27 @@ p a {
 }
 
 .conteiner__text {
+  width: 100%;
   p {
     margin: 9px 0;
   }
+  img {
+    width: 100%;
+    border-radius: 10px;
+    height: 21vw;
+  }
+  .img--small {
+    height: 15vw;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    padding: 3px;
+  }
 }
+
 
 .text__second {
   display: flex;
@@ -22,14 +39,45 @@ p a {
   }
 }
 
-.text__third img {
-  width: 100%;
-  border-radius: 10px;
-}
 
 .reference{
   display: flex;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+}
+
+@media screen and (max-width: 1100px) {
+  .conteiner__text img{
+    height: 30vw;
+  }
+.img--small {
+  height: 30vw;
+}
+
+  .container__article{
+    width: 79vw;
+    margin: 0 auto;
+    p {
+      text-align: justify;
+    }
+  }
+  .text__second {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container__article{
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .conteiner__text img{
+    height: 50vw;
+  }
+  .img--small {
+    height: 50vw;
+  }
 }

@@ -1,0 +1,36 @@
+.title {
+  display: flex;
+  .text__title {
+    width: 75%;
+  }
+  img {
+    height: 10vw;
+    border-radius: 10px;
+    align-self: flex-end;
+  }
+}
+.first__p {
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 1200px){
+  .title {
+    display: flex;
+    .text__title {
+      width: 75%;
+    }
+    img {
+      height: 15vw;
+      border-radius: 10px;
+      align-self: flex-end;
+    }
+  }
+  .first__p {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .title img {
+    visibility: hidden;
+  }
+}

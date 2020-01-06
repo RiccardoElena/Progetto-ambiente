@@ -6,70 +6,84 @@ html
     include base/_header.pug
     img.hero(src="imgs/hero.jpg")
     .container.container--small
-      h1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        | tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim
-        | sed faucibus. Metus vulputate eu scelerisque felis imperdiet. Mauris nunc
-        | congue nisi vitae suscipit tellus mauris a diam. Egestas integer eget
-        | aliquet nibh praesent tristique. Fringilla urna porttitor rhoncus dolor purus.
-        | Habitasse platea dictumst quisque sagittis purus sit amet.
-        | Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices
-        | gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet
-        | risus feugiat in. Non tellus orci ac auctor augue. Potenti nullam ac tortor
-        | vitae purus faucibus ornare.
+      .title
+        .text__title
+          h1.main__title V.CUOCO
+          h1.second__title per l'ambiente
+        a(href="https://www.liceocuoconapoli.it/")
+          img(src="imgs/V.cuoco.jpg", alt="")
+      p.first__p
+        | Al termine della settimana dello studente, noi, ragazzi e ragazze della
+        | 3bs, abbiamo deciso di dar vita a questo progetto, utilizzando le nozioni
+        | che ci sono state date e le nostre conoscenze con l'obiettivo di sensibilizzare
+        | tutti sul tema ambientale.
     .container.pro-cons-boxes
       .box
-        h2 Pros
+        h2 Tematiche affrontate
         p
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          | tempor incididunt ut labore et dolore magna aliqua.
+          | L'ambiente è un argomento ampio e disparato quindi ci siamo concentrati su
+          | alcune tematiche non potendole trattare tutte. Gli argomenti di cui
+          |  abbiamo parlato sono:
         ul
-          li Item 1
-          li Item 2
-          li Item 3
-          li Item 4
-          li Item 5
-      .box
-        h2 Cons
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          | tempor incididunt ut labore et dolore magna aliqua.
-        ul
-          li Item 1
-          li Item 2
-          li Item 3
-          li Item 4
-          li Item 5
+          li Movimento Ambientalista
+          li Surriscaldamento globale
+          li Incendi  boschivi
+          li Inquinamento (area, acque, etc)
+          li Energie rinnovabili e non
+      //- .box
+      //-   h2 Cons
+      //-   p
+      //-     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      //-     | tempor incididunt ut labore et dolore magna aliqua.
+      //-   ul
+      //-     li Item 1
+      //-     li Item 2
+      //-     li Item 3
+      //-     li Item 4
+      //-     li Item 5
     .container.container--small
       p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        | tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim
-        | sed faucibus. Metus vulputate eu scelerisque felis imperdiet. Mauris nunc
-        | congue nisi vitae suscipit tellus mauris a diam. Egestas integer eget
-        | aliquet nibh praesent tristique. Fringilla urna porttitor rhoncus dolor purus.
-        | Habitasse platea dictumst quisque sagittis purus sit amet.
-        | Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices
-        | gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet
-        | risus feugiat in. Non tellus orci ac auctor augue. Potenti nullam ac tortor
-        | vitae purus faucibus ornare.
+        | Il progresso di cui Mass Media vogliono convincerci, si chiama regresso.
+        | L'uomo per la venerazione del denaro ha fatto si che la terra sia in queste condizioni.
+        | L'utilizzo di combustibili fossili, i processi industriali, gli impianti di refrigerazione e riscaldamento, e la deforestazione sono alcune delle fonti di guadagno con cui si sta distruggendo il pianeta.
+        | Il problema ormai è evidente ed è inutile ignorarlo.
     .container.container__video
-      iframe.video(src="https://www.youtube.com/embed/fWInyaMWBY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-    .container.gallery
-      img.gallery__item(src="https://via.placeholder.com/322")
-      img.gallery__item(src="https://via.placeholder.com/322")
-      img.gallery__item(src="https://via.placeholder.com/322")
-      img.gallery__item(src="https://via.placeholder.com/322")
-      img.gallery__item(src="https://via.placeholder.com/322")
-      img.gallery__item(src="https://via.placeholder.com/322")
-    .container
-      .articles
-        h2 I nostri articoli
+      iframe.video(src="https://www.youtube.com/embed/eRLJscAlk1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    .container.container--small
+      p
+        | Queste sono solo alcune delle terrificanti immagini che testimoniano
+        | come la brutale azione dell'uomo sull'ambiente abbia effetti devastanti
+        | e catastrofici. Dalla deforestazione del "polmone del mondo", l'Amazzonia,
+        | all'inquinamento dato dai rifiuti e lo scioglimento dei ghiacciai, dallo
+        | sfruttamento incontrollato dei combustibili fossili agli scarti industiali
+        | emessi nel suolo, nelle acque e nell'aria ormai è evidente e palpabile il
+        | problema 'ambiente'
+    .container.gallery.middle
+      .slides
+        input(type="radio" name="r" id="r1" checked)
+        input(type="radio" name="r" id="r2")
+        input(type="radio" name="r" id="r3")
+        input(type="radio" name="r" id="r4")
+        .slide.s1
+          img(src="imgs/1.jpeg", alt="")
+        .slide
+          img(src="imgs/2.jpeg", alt="")
+        .slide
+          img(src="imgs/3.jpeg", alt="")
+        .slide
+          img(src="imgs/4.jpeg", alt="")
+      .navigation
+        label.bar(for="r1")
+        label.bar(for="r2")
+        label.bar(for="r3")
+        label.bar(for="r4")
+    .container.articles
+      h2 I nostri articoli
       .related-articles
-        +article("Greta Thunberg, eroina o burattino?", "Greta Thunberg, giovane studentessa svedese nata nel 2003 che stasensibilizzando all'azione un'intera generazione, è l'ideatrice dei Fridays For Future e ", "./article1.html")
-        +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in", "/credits.html")
-        +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
-        +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
-        +article("Habitasse platea dictumst", "Ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Eget nullam non nisi est sit. Tincidunt id aliquet risus feugiat in", "/credits.html")
-        +article("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Metus vulputate eu scelerisque felis imperdiet", "/credits.html")
+        +article("Greta Thunberg, eroina o burattino?", "Greta Thunberg, giovane studentessa svedese nata nel 2003 che sta sensibilizzando all'azione un'intera generazione, è l'ideatrice dei Fridays For Future e ", "./article1.html")
+        +article("La sindrome di Venere", "“Nella scienza,bisogna infatti valutare proprio le informazioni che sembrano discordare dall'ipotesi iniziale, per essere sicuri di non  stare ingannando se stessi ”", "/article2.html")
+        +article("Australia in fumo", "In questo ultimo anno sono stati arrecati gravi danni al nostro pianeta a causa dell’innalzamento delle temperature dovute al ", "/article3.html")
+        +article("L'industria del pregresso", "La sensibilità nei confronti dell’ ambiente è un qualcosa con cui tutti ci confrontiamo ogni giorno, così come l’inquinamento industriale è ", "/article4.html")
+        +article("L'inquinamento dei mari", "L'oceano – questa immensa distesa d'acqua blu che ricopre parte del nostro pianeta – diventa sempre più la discarica della Terra. Dai sacchetti ", "/article5.html")
+        +article("Energie rinnovabili e non: perchè scegliere l'ecologico", " Se si parla  di energie rinnovabili si fa riferimento all’energia pulita, ad esempio quelle fonti energetiche non soggette ad esaurimento e il cui utilizzo non reca danni all’ ambiente, in quanto", "/article6.html")
     include base/_footer.pug

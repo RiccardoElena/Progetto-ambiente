@@ -1,11 +1,12 @@
 
-.articles {
-  margin-left: 65px;
+.articles h2 {
+  margin-left: 10%;
 }
 
 .related-articles {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .article {
@@ -16,14 +17,35 @@
   border: 1px solid $color-primary;
   border-radius: 10px;
   margin-bottom: 28px;
-
-  &:nth-of-type(3n+2) {
-    margin-right: 28px;
-    margin-left: 28px;
-  }
+  margin-right: 28px;
+  // &:nth-of-type(3n+2) {
+  //   margin-right: 28px;
+  //   margin-left: 28px;
+  // }
 }
 
 .article__read-more {
   width: max-content;
   margin-top: auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .related-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .article {
+    width: calc(50% - 76px);
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .article {
+    width: 100%;
+    margin-right: auto;
+  }
 }

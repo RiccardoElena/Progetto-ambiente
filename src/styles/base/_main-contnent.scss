@@ -1,3 +1,17 @@
 main {
   width: 100vw;
+  justify-content: center;
+}
+.main__title {
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.second__title {
+  margin-top: 0;
+  padding-left: 5%;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

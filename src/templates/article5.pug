@@ -1,0 +1,40 @@
+doctype html
+html
+  include ./base/_head.pug
+  body
+    include ./base/_header.pug
+    main
+      img.hero(src="imgs/hero.jpg")
+      .container.container--small.container__article
+        h1 Inquinamento dei mari
+        .conteiner__text
+          .text__initial
+            p L'oceano – questa immensa distesa d'acqua blu che ricopre parte
+              | del nostro pianeta – diventa sempre più la discarica della Terra.
+              | Dai sacchetti di plastica ai pesticidi, la maggiore parte dei
+              |  rifiuti prodotti dall'uomo finisce in un modo o nell'altro in
+              | mare.
+              a(href="https://www.wwf.ch/it/i-nostri-obiettivi/inquinamento-dei-mari")  86 milioni di tonnellate di plastica
+              |  navigano nei nostri oceani
+          .text__second--alternative
+            img.img.p2(src="imgs/mare-inquinato.jpeg")
+            p Sacchetti di plastica, palloni, scarpe, materiali di imballaggio: se non smaltiamo i rifiuti a regola d’arte, prima o poi
+              a(href="https://www.lifegate.it/persone/news/come-plastica-uccide-animali-marini")  vanno a finire in mare.
+              |  In particolare la plastica è un materiale non biodegradabile e rischia di essere ingerita da balene, gabbiani, tartarughe marine e altri animali. I pezzi di plastica possono restare nella gola degli animali o ostruirne il tratto digerente, e di conseguenza bloccare le vie respiratorie e impedire l’assunzione di cibo. Se giovani esemplari rimangono impigliati nella plastica possono sviluppare danni alla pelle o malformazioni durante la crescita. Inventari e studi dipingono un quadro abbastanza tetro per il futuro dei mari come riportato anche nel video di Fanpage.it
+          .container.container__video__article
+            iframe.video--small(src="https://www.youtube.com/embed/GGo-zlDe5J4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .text__third
+            p Ottomila chilometri di spiagge e mare cristallino: a tanto ammonta
+              | il patrimonio costiero italiano, una risorsa preziosa ma fragile.
+              |Secondo la recente indagine di
+              a(href="https://www.legambiente.it/indagine-beach-litter/")  Legambiente Beach Litter 2019,
+              |  gran parte delle nostre spiagge risulta infatti inquinata da rifiuti di origine plastica (81% del totale: pezzi di polistirolo, tappi, bottiglie, stoviglie di plastica usa e getta, contenitori e simili), cotton-fioc, 
+              a(href="http://www.menorifiuti.org/2015/03/12/sigarette-che-germogliano-e-gomme-da-masticare-che-diventano-polvere-la-nuova-lotta-ai-rifiuti-speciali/")  mozziconi di sigarette,
+              |  reti da pesca, materiali da costruzione, nonché da bottiglie e pezzi di vetro. Questi rifiuti generano un inquinamento spesso irreversibile, che ha gravi ripercussioni non solo sulla fauna marina che li ingerisce (e di conseguenza anche sull’uomo), ma anche sul turismo (minor appeal delle spiagge inquinate) e sull’economia (costi da sostenere per la pulizia delle spiagge).
+            p Se da un lato l’inquinamento di mari e spiagge potrebbe essere fortemente ridotto attraverso interventi “dall’alto” che mirino a produrre prodotti e 
+              a(href="https://www.ehabitat.it/2016/06/15/nasce-la-bottiglia-commestibile-per-un-futuro-sostenibile-senza-plastica/")  imballi più sostenibili
+              |  e a rendere più efficienti il riciclo dei rifiuti e gli impianti di depurazione, anche noi cittadini possiamo però contribuire a conservare la bellezza dell’ambiente naturale, attraverso alcuni semplici accorgimenti volti a limitare l’impatto sull’ecosistema marino della nostra permanenza in spiaggia.
+            img.img(src="imgs/inquinamento-spiagge.jpeg")
+          .sign
+            a(href="credits.html#AndreaMontagnaro") di Andrea Montagnaro
+    include ./base/_footer.pug

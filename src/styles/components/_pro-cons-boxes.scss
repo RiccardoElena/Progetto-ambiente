@@ -4,19 +4,21 @@
 
 .pro-cons-boxes {
   display: flex;
+  justify-content: center;
 }
 
 .box {
-  width: calc(50% - 28px);
+  width: 50%;
   border-radius: 10px;
-  padding: 28px 48px;
+  padding: 28px 10%;
   background-image: url("../imgs/background.jpg");
   background-size: 100%;
-
-  &:first-of-type {
-    margin-right: 48px;
+  ul {
+    list-style: tibetan;
   }
-
+  li {
+    padding: 1px;
+  }
   p {
     font-size: 1rem;
     line-height: 1.1rem;
