@@ -33,6 +33,7 @@
 
 .btn.list__read-more{
   margin-top: 15px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
@@ -70,8 +71,32 @@
 
 @media screen and (max-width: 1000px) {
 
-  .article {
+  .list {
+    h2 {
+      height: 25%;
+    }
+    p {
+      height: 25%;
+    }
+    img {
+      height: 25%;
+    }
+    a {
+      height: 25%;
+
+    }
     width: 100%;
     margin-right: auto;
+  }
+  #FrancescaDiNunzio h2 {
+    font-size: 1.386rem;
+  }
+
+  #AndreaMontagnaro h2 {
+    font-size: 1.405rem;
+  }
+
+  #AntonioMusto p {
+    font-size: 0.8rem;
   }
 }
